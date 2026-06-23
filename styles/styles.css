@@ -1,0 +1,55 @@
+/*selector
+{
+    propiedad:valor
+} */
+
+h1
+{
+    text-align: center; /*Centra el texto*/
+    text-decoration: underline; /*Subraya*/
+    font-size: 40px; /*Tamaño de texto*/
+}
+
+h2
+{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+.formasPago
+{
+    font-size: 17px;
+    color: hsl(125, 100%, 36%);
+}
+
+header nav a
+{
+    font-size: 20px;
+}
+
+section ul li
+{
+    font-size: 17px;    
+}
+
+.tituloServicios
+{
+    font-size: 35px;
+}
+
+section div figure figcaption
+{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:underline;
+}
