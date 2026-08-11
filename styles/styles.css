@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri;
+  color: black;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+}
+header .navbar {
+  width: 100%;
+  background-color: #eaf6f5;
+}
+header .navbar-brand img {
+  width: 80px;
+  height: auto;
+}
+header .nav-link {
+  color: #2f9c95;
+  font-family: Arial;
+  transition: color 0.3s ease;
+}
+header .nav-link:hover {
+  color: #ff8a65;
+}
+header .nav-link.active {
+  font-weight: bold;
+}
+header h1 {
+  font-family: Arial;
+  margin-top: 16px;
+}
+header h2 {
+  font-family: Arial;
+  font-weight: normal;
+  font-style: italic;
+  color: #ff8a65;
+  margin-bottom: 16px;
+}
+
+main {
+  width: 100%;
+}
+main h2 {
+  color: #2f9c95;
+  font-family: Arial;
+}
+main p {
+  max-width: 600px;
+}
+main iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+main figure {
+  margin: 0;
+}
+
+.promoNfc {
+  background-color: #ff8a65;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+.promoNfc:hover {
+  opacity: 0.85;
+}
+
+.imgPromo {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  background-color: #2f9c95;
+  color: white;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
+footer iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+footer h3 {
+  margin-bottom: 8px;
+}
+footer a {
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  padding: 32px 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 32px;
+  }
+}
+
+.tituloServicios {
+  color: #2f9c95;
+  margin-bottom: 16px;
+}
+
+.cardServicio, .cardProyecto, .cardContacto, .formasPago li {
+  background-color: #eaf6f5;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.cardServicio figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.cardServicio figcaption {
+  font-weight: bold;
+  color: #2f9c95;
+  margin-top: 8px;
+}
+
+.cardProyecto figure img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.cardContacto {
+  text-align: left;
+}
+.cardContacto li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.cardContacto a {
+  color: #2f9c95;
+  text-decoration: none;
+}
+.cardContacto a:hover {
+  text-decoration: underline;
+}
+
+.contactoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .contactoWrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.formasPago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.formasPago li {
+  max-width: 140px;
+  padding: 8px;
+  font-weight: bold;
+  color: #2f9c95;
+}
+
+.gridProyectos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gridProyectos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.gridServicios {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand img:hover {
+  animation: latido 0.6s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */

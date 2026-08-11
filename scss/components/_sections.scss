@@ -1,0 +1,21 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+section
+{
+    @include flex-base(center, center, 16px);
+    flex-direction: column;
+    padding: 32px 16px;
+    text-align: center;
+
+    @include tablet
+    {
+        padding: 32px;
+    }
+}
+
+.tituloServicios
+{
+    color: $colorPrimario;
+    margin-bottom: 16px;
+}

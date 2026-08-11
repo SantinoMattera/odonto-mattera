@@ -1,0 +1,52 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+header
+{
+    background-color: $colorFondo-header;
+    text-align: center;
+
+    .navbar
+    {
+        width: 100%;
+        background-color: $colorSecundario;
+    }
+
+    .navbar-brand img
+    {
+        width: 80px;
+        height: auto;
+    }
+
+    .nav-link
+    {
+        color: $colorPrimario;
+        font-family: $fuente-subtitulos;
+        transition: color 0.3s ease;
+
+        &:hover
+        {
+            color: $colorAcento;
+        }
+
+        &.active
+        {
+            font-weight: bold;
+        }
+    }
+
+    h1
+    {
+        font-family: $fuente-titulos;
+        margin-top: 16px;
+    }
+
+    h2
+    {
+        font-family: $fuente-subtitulos;
+        font-weight: normal;
+        font-style: italic;
+        color: $colorAcento;
+        margin-bottom: 16px;
+    }
+}
