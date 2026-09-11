@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+footer
+{
+    background-color: $colorPrimario;
+    color: white;
+    padding: 32px 16px;
+
+    @include flex-base(center, center, 32px);
+    flex-direction: column;
+    text-align: center;
+
+    @include tablet
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    iframe
+    {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    h3
+    {
+        margin-bottom: 8px;
+    }
+
+    a
+    {
+        color: white;
+    }
+}

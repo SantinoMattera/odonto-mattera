@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+@mixin flex-base($justify, $align, $gap)
+{
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin tablet
+{
+    @media (min-width: 768px)
+    {
+        @content;
+    }
+}
+
+@mixin desktop
+{
+    @media (min-width: 1024px)
+    {
+        @content;
+    }
+}
+
+@mixin boton($colorFondo, $colorTexto)
+{
+    background-color: $colorFondo;
+    color: $colorTexto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover
+    {
+        opacity: 0.85;
+    }
+}

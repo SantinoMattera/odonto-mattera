@@ -1,0 +1,41 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+main
+{
+    width: 100%;
+
+    h2
+    {
+        color: $colorPrimario;
+        font-family: $fuente-titulos;
+    }
+
+    p
+    {
+        max-width: 600px;
+    }
+
+    iframe
+    {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 16px 0;
+    }
+
+    figure
+    {
+        margin: 0;
+    }
+}
+
+.promoNfc
+{
+    @include boton($colorAcento, white);
+}
+
+.imgPromo
+{
+    width: 150px;
+    height: auto;
+}
